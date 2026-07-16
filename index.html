@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER CUP Player List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-black py-8 md:py-12">
+
+    <div class="max-w-7xl mx-auto px-4">
+        
+        <!-- -->
+        <div class="mb-12 md:mb-20">
+            <h1 class="text-3xl md:text-5xl font-extrabold text-white tracking-tight">SUPER CUP PLAYERS</h1>
+            <br><br>
+            <div class="mt-6 flex items-center gap-3">
+                <div class="bg-gradient-to-r from-[#38003c] via-[#860086] to-[#38003c] p-[2px] rounded-full shadow-lg shadow-purple-900/50">
+                    <span class="flex items-center gap-3 bg-black text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase">
+                        <img src="https://i.pinimg.com/1200x/f9/4c/fa/f94cfa0b29be8b833dd2efd743166652.jpg" alt="Premier League Logo" class="w-6 h-6 md:w-8 md:h-8 object-contain">
+                        Premier League Player
+                    </span>
+                </div>
+                <div class="h-px bg-gray-200 flex-grow max-w-[100px] md:max-w-[200px]"></div>
+            </div>
+
+            <div class="flex overflow-x-auto gap-4 md:gap-6 pb-6 mt-6 md:mt-10 hide-scrollbar cursor-grab">
+                <script>
+                    const players = [
+                        "P.S.T.W - Chelsea",
+                        "Kenz - Arsenal",
+                        "Nika - Liverpool",
+                        "Xtet Painting - Tottenham",
+                        "Kyaw Lin Khaing - Wolves",
+                        "Jewell - Nottingham",
+                        "Phyo Thant Kyaw - Leeds",
+                        "Nyan Phyo Aung - Man United",
+                        "FELIH - Man City",
+                        "Nyi Nyi Aung - Aston Villa",
+                        "Hero pool - Brighton",
+                        "T&N - Newcastle",
+                    ];
+                    const telegramLinks = [
+                        "https://t.me/aungnayzan",
+                        "https://t.me/kenzjust",
+                        "https://t.me/Nikakmt",
+                        "https://t.me/Pyaephyokyaw255",
+                        "https://t.me/KIKhaing12",
+                        "https://t.me/-",
+                        "https://t.me/ptkyaw87",
+                        "https://t.me/Shhdfhjd",
+                        "https://t.me/",
+                        "https://t.me/MayJu2004",
+                        "https://t.me/Heropool",
+                        "https://t.me/",
+                    ];
+                    const images = [
+                        "1.jpg",
+                        "2.jpg",
+                        "3.jpg",
+                        "4.jpg",
+                        "5.jpg",
+                        "6.jpg",
+                        "7.jpg",
+                        "8.jpg",
+                        "9.jpg",
+                        "10.jpg",
+                        "11.jpg",
+                        "12.jpg",
+                    ];
+
+                    for (let i = 0; i < players.length; i++) {
+                        document.write(`
+                            <div class="relative bg-gray-900 text-white rounded-[30px] md:rounded-[40px] shadow-2xl border border-gray-800 w-[240px] md:w-[300px] h-[400px] md:h-[500px] shrink-0 overflow-hidden flex flex-col justify-end">
+                                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('${images[i]}')">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
+                                </div>
+                                <div class="relative z-10 px-6 py-8">
+                                    <h2 class="text-lg md:text-xl font-bold flex items-center gap-2 mb-4 md:mb-6 text-white">${players[i]} <span class="text-blue-500"><i class="fa-solid fa-circle-check"></i></span></h2>
+                                    <a href="${telegramLinks[i]}" target="_blank" class="w-full bg-white text-black font-semibold py-2.5 md:py-3 rounded-full text-xs md:text-sm hover:bg-gray-200 transition text-center block">Play With Him</a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="mb-12 md:mb-20">
+            <div class="mt-6 flex items-center gap-3">
+                <div class="bg-gradient-to-r from-orange-500 via-red-600 to-orange-500 p-[2px] rounded-full shadow-lg shadow-orange-900/50">
+                    <span class="flex items-center gap-3 bg-black text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/LaLiga_EA_Sports_2023_Vertical_Logo.svg/1280px-LaLiga_EA_Sports_2023_Vertical_Logo.svg.png" alt="Laliga Logo" class="w-6 h-6 md:w-8 md:h-8 object-contain">
+                        Laliga Player
+                    </span>
+                </div>
+                <div class="h-px bg-gray-800 flex-grow max-w-[100px] md:max-w-[200px]"></div>
+            </div>
+
+            <div class="flex overflow-x-auto gap-4 md:gap-6 pb-6 mt-6 md:mt-10 hide-scrollbar cursor-grab">
+                <script>
+                    const laligaPlayers = [
+                        "Skino - Real Madrid",
+                        "Hk - Atletico Madrid",
+                        "Stam - Villarreal",
+                        "Wai Hlyan - Real Sociedad",
+                        "Thein Win - Getafe",
+                        "Toe1 - Alaves",
+                        "R Kar - Sevilla",
+                        "J Uilo - Real Betis",
+                        "Mg Sai - Girona",
+                        "M.Zayar K- Athletic Bilbao",
+                        "? - Valencia",
+                        "That Htet Aung - Barcelona",
+                    ];
+                    const laligaLinks = [
+                        "https://t.me/Skino777",
+                        "https://t.me/",
+                        "https://t.me/LuNyo0",
+                        "https://t.me/JeevaG2006",
+                        "https://t.me/TheinWinn2000",
+                        "https://t.me/Toe1l",
+                        "https://t.me/Arkar370",
+                        "https://t.me/oki6k",
+                        "https://t.me/Dawmyatsumo",
+                        "https://t.me/",
+                        "https://t.me/Acde100200",
+                        "https://t.me/lokidemon99",
+                    ];
+                    const laligaImages = [
+
+                        "13.jpg",
+                        "14.jpg",
+                        "15.jpg",
+                        "16.jpg",
+                        "17.jpg",
+                        "18.jpg",
+                        "19.jpg",
+                        "20.jpg",
+                        "21.jpg",
+                        "22.jpg",
+                        "23.jpg",
+                        "24.jpg",
+                        
+                    ];
+
+                    for (let i = 0; i < laligaPlayers.length; i++) {
+                        document.write(`
+                            <div class="relative bg-gray-900 text-white rounded-[30px] md:rounded-[40px] shadow-2xl border border-gray-800 w-[240px] md:w-[300px] h-[400px] md:h-[500px] shrink-0 overflow-hidden flex flex-col justify-end">
+                                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('${laligaImages[i]}')">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
+                                </div>
+                                <div class="relative z-10 px-6 py-8">
+                                    <h2 class="text-lg md:text-xl font-bold flex items-center gap-2 mb-4 md:mb-6 text-white">${laligaPlayers[i]} <span class="text-orange-500"><i class="fa-solid fa-circle-check"></i></span></h2>
+                                    <a href="${laligaLinks[i]}" target="_blank" class="w-full bg-white text-black font-semibold py-2.5 md:py-3 rounded-full text-xs md:text-sm hover:bg-gray-200 transition text-center block">Play With Him</a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!-- -->
+        <div class="mb-12 md:mb-20">
+            <div class="mt-6 flex items-center gap-3">
+                <div class="bg-gradient-to-r from-blue-700 via-white to-red-700 p-[2px] rounded-full shadow-lg shadow-blue-900/50">
+                    <span class="flex items-center gap-3 bg-black text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ab/Serie_A_ENILIVE_logo.svg/960px-Serie_A_ENILIVE_logo.svg.png" alt="Serie A Logo" class="w-6 h-6 md:w-8 md:h-8 object-contain">
+                        Serie A Player
+                    </span>
+                </div>
+                <div class="h-px bg-gray-800 flex-grow max-w-[100px] md:max-w-[200px]"></div>
+            </div>
+
+            <div class="flex overflow-x-auto gap-4 md:gap-6 pb-6 mt-6 md:mt-10 hide-scrollbar cursor-grab">
+                <script>
+                    const serieAPlayers = [
+                        
+                        "Ke - AC Milan",
+                        "Thuri Min - Juventus",
+                        "U Min Min Kyaw - Roma",
+                        "Hein Htet Naing - Fiorentina",
+                        "BE - Como",
+                        "Bgo Thar Lay - Lazio",
+                        "York Loa Cc - Napoli",
+                        "How - Torino",
+                        "HEMAL JR 10 - Verona",
+                        "Pyae Sone Hein - Parma",
+                        "Shwe Shwe - Atalanta",
+                        "Zay yar Lin - Inter Milan",
+
+                    ];
+                    const serieALinks = [
+                        "https://t.me/Sanminoo",
+                        "https://t.me/ThuriMin2355",
+                        "https://t.me/KyawGyi798260",
+                        "https://t.me/HeinHtet_Nai",
+                        "https://t.me/Nyan428925",
+                        "https://t.me/Bgo_thar_lay",
+                        "https://t.me/MRTONE3",
+                        "https://t.me/iluv_nadi",
+                        "https://t.me/Hemaljr10",
+                        "https://t.me/iz_szlai",
+                        "https://t.me/LuLu1662017",
+                        "https://t.me/Zayyarlin2",
+                    ];
+                    const serieAImages = [
+                        
+                        
+                    ];
+
+                    for (let i = 0; i < serieAPlayers.length; i++) {
+                        document.write(`
+                            <div class="relative bg-gray-900 text-white rounded-[30px] md:rounded-[40px] shadow-2xl border border-gray-800 w-[240px] md:w-[300px] h-[400px] md:h-[500px] shrink-0 overflow-hidden flex flex-col justify-end">
+                                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('${serieAImages[i]}')">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
+                                </div>
+                                <div class="relative z-10 px-6 py-8">
+                                    <h2 class="text-lg md:text-xl font-bold flex items-center gap-2 mb-4 md:mb-6 text-white">${serieAPlayers[i]} <span class="text-red-500"><i class="fa-solid fa-circle-check"></i></span></h2>
+                                    <a href="${serieALinks[i]}" target="_blank" class="w-full bg-white text-black font-semibold py-2.5 md:py-3 rounded-full text-xs md:text-sm hover:bg-gray-200 transition text-center block">Play With Him</a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </div>
+
+        <!-- -->
+        <div>
+            <div class="mt-6 flex items-center gap-3">
+                <div class="bg-gradient-to-r from-red-600 via-yellow-400 to-green-600 p-[2px] rounded-full shadow-lg shadow-yellow-900/50">
+                    <span class="flex items-center gap-3 bg-black text-white px-4 md:px-6 py-2 rounded-full text-xs md:text-sm font-bold tracking-widest uppercase">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Myanmar_National_League_logo.png" alt="MNL Logo" class="w-6 h-6 md:w-8 md:h-8 object-contain">
+                        MNL Player
+                    </span>
+                </div>
+                <div class="h-px bg-gray-800 flex-grow max-w-[100px] md:max-w-[200px]"></div>
+            </div>
+
+            <div class="flex overflow-x-auto gap-4 md:gap-6 pb-6 mt-6 md:mt-10 hide-scrollbar cursor-grab">
+                <script>
+                    const mnlPlayers = [
+                        
+                        "KYT gaming - Dortmund",
+                        "Ph Yo - Frankfurt",
+                        "Myan khun - RB Leipzig",
+                        "Ansissis - Leverkusen",
+                        "Soe Myat Min - Union Berlin",
+                        "U Ye Ko - Freiburg",
+                        "Zaw - Werder Bremen",
+                        "Khar Khar - Saint Pauli",
+                        "JP - Wolfsburg",
+                        "Kyaw Thaik - VfB Stuttgart",
+                        "Pyae Phyo Aung - FSV Mainz 05",
+                        "Real Madrid - Bayern Munich",
+                    ];
+                    const mnlLinks = [
+                        
+                        "https://t.me/KoKyaw_KYT",
+                        "https://t.me/Veiotf",
+                        "https://t.me/Myan_Khun",
+                        "https://t.me/mikeyjn",
+                        "https://t.me/merrydesu",
+                        "https://t.me/",
+                        "https://t.me/Turkey772",
+                        "https://t.me/kharkhar1225",
+                        "https://t.me/Badrul11",
+                        "https://t.me/Kyawthaik468",
+                        "https://t.me/",
+                        "https://t.me/tddgdu",
+                    ];
+                    const mnlImages = [
+                        
+                        
+                    ];
+
+                    for (let i = 0; i < mnlPlayers.length; i++) {
+                        document.write(`
+                            <div class="relative bg-gray-900 text-white rounded-[30px] md:rounded-[40px] shadow-2xl border border-gray-800 w-[240px] md:w-[300px] h-[400px] md:h-[500px] shrink-0 overflow-hidden flex flex-col justify-end">
+                                <div class="absolute inset-0 z-0 bg-cover bg-center" style="background-image: url('${mnlImages[i]}')">
+                                    <div class="absolute inset-0 bg-gradient-to-t from-black via-gray-900/40 to-transparent"></div>
+                                </div>
+                                <div class="relative z-10 px-6 py-8">
+                                    <h2 class="text-lg md:text-xl font-bold flex items-center gap-2 mb-4 md:mb-6 text-white">${mnlPlayers[i]} <span class="text-yellow-500"><i class="fa-solid fa-circle-check"></i></span></h2>
+                                    <a href="${mnlLinks[i]}" target="_blank" class="w-full bg-white text-black font-semibold py-2.5 md:py-3 rounded-full text-xs md:text-sm hover:bg-gray-200 transition text-center block">Play With Him</a>
+                                </div>
+                            </div>
+                        `);
+                    }
+                </script>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
